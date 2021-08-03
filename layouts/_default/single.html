@@ -1,0 +1,123 @@
+{{ define "main" }}
+
+<section id="post-block" class="post-block section pb-0">
+  <div class="container">
+     <div class="row no-gutters justify-content-center">
+        <div class="col-lg-12">
+          <!-- image path -->
+          {{ $imagePath:= .Params.image }}
+          <!-- image CDN -->
+          {{ if hasPrefix $imagePath "http" }}
+          <img loading="lazy" decoding="async" src="{{ $imagePath | safeURL }}" alt="{{ .Title }}" class="img-fluid">
+          {{ else }}
+          <!-- /image cdn -->
+
+          <!-- image processing for multiple device -->
+          {{ if fileExists (add `assets/` $imagePath) }}
+          {{ $image:= resources.Get $imagePath }}
+          {{ $imageFallback:= $image.Resize "1110x" }}
+          {{ $imageXL:= $image.Resize "1110x webp" }}
+          {{ $imageLG:= $image.Resize "650x webp" }}
+          {{ $imageMD:= $image.Resize "600x webp" }}
+          {{ $imageSM:= $image.Resize "545x webp" }}
+          <picture>
+            <source srcset="{{ $imageSM.RelPermalink }}" media="(max-width: 575px)">
+            <source srcset="{{ $imageMD.RelPermalink }}" media="(max-width: 767px)">
+            <source srcset="{{ $imageLG.RelPermalink }}" media="(max-width: 991px)">
+            <source srcset="{{ $imageXL.RelPermalink }}">
+            <img loading="lazy" decoding="async" class="img-fluid w-100" src="{{$imageFallback.RelPermalink}}" alt="post image" width="{{$image.Width}}" height="{{$image.Height}}">
+          </picture>
+          {{ end }}
+          <!-- /image processing for multiple device -->
+          {{ end }}
+          <!-- /single image -->
+        </div>
+        <div class="col-lg-9 mt-5">
+           <div class="text-center mb-5">
+              <div class="card-meta-tag">
+                <a href="#!">{{.Params.card_meta_tag}}</a>
+              </div>
+              <h2 class="h1 mb-3">
+                 <a class="post-title" href="{{.RelPermalink}}">{{.Title}}</a>
+              </h2>
+              <div class="card-meta">
+                <em>{{.PublishDate.Format "Jan 2, 2006"}}</em>
+                <em>
+                  {{ with site.GetPage (.Params.Author | urlize | lower) }}
+                  <a href="{{.Permalink}}" class="card-meta-author text-primary">
+                    {{ .Title }}
+                  </a>
+                  {{ end }}
+                </div>
+              </em>
+           </div>
+           <div class="content">{{.Content}}</div>
+           <div class="single-post-meta">
+              {{ $url := printf "%s" .Permalink | absLangURL }}
+              <ul class="social-links is-circle-filled list-unstyled list-inline mt-5">
+                <li class="list-inline-item">
+                  <a href="https://facebook.com/sharer/sharer.php?u={{ $url }}" target="_blank" class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/intent/tweet/?text={{ .Title }}&amp;url={{ $url }}" target="_blank" class="twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.pinterest.com/pin/?text=&amp;url={{ $url }}" target="_blank"  class="pinterest">
+                    <i class="fab fa-pinterest"></i>
+                  </a>
+                </li>
+              </ul>
+           </div>
+
+           {{ with site.Params.post_author }}
+           <div class="single-post-author">
+              {{with .title}}<p class="text-uppercase font-secondary mb-4">{{.|markdownify}}</p>{{end}}
+              <div class="media small d-block d-sm-flex text-center text-sm-left">
+
+                <img class="img-fluid rounded-circle mr-0 mr-sm-4 mb-4" src="{{ .avatar | relURL}}" alt="img">
+
+                 <div class="media-body">
+                  {{with .content}}<p class="font-primary">{{.|markdownify}}</p>{{end}}
+                    <a class="text-primary d-inline-block" href="#">View all posts by John Wood <i class="fas fa-arrow-right"></i></a>
+
+                    <ul class="social-links list-unstyled list-inline ml-0 ml-sm-n2 mt-3">
+                      {{ range site.Params.social }}
+                      <li class="list-inline-item">
+                        <a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a>
+                      </li>
+                      {{ end }}
+                    </ul>
+                 </div>
+              </div>
+           </div>
+           {{end}}
+        </div>
+
+        <div class="col-12 mt-5">
+           <div class="single-post-similer section">
+              <div class="row mt-4">
+                 <div class="col-12 mb-5">
+                    <h2 class="text-center font-secondary text-uppercase">Similer Post</h2>
+                 </div>
+
+                 {{ $related := (where site.RegularPages "Section" "in" site.Params.mainSections) }}
+                 {{ range first 3 $related }}
+                 <div class="col-lg-4 col-md-4 col-sm-6">
+                 {{ .Render "post" }}
+               </div>
+               {{ end }}
+
+                 
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</section>
+
+{{ end }}
+

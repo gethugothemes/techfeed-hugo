@@ -1,0 +1,73 @@
+<!-- navigation -->
+<header class="header-nav">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navHeader" aria-controls="navHeader" aria-expanded="true">
+        {{/*  <i class="fas fa-bars"></i>  */}}
+        <span class="d-inline"><i class="fab fa-buromobelexperte"></i> Menu</span>
+        <span class="d-none"><i class="fas fa-times"></i> Close</span>
+      </button>
+
+  
+
+      <div class="collapse navbar-collapse text-center" id="navHeader">
+        <ul class="navbar-nav mx-auto">
+          {{ range site.Menus.main }}
+          {{ if .HasChildren }}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              {{ .Name }}
+            </a>
+            <div class="dropdown-menu">
+              {{ range .Children }}
+              <a class="dropdown-item" {{if findRE `^http` .URL}}target="_blank" rel="noopener" {{end}}
+                href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{ .URL }}{{else}}{{.URL | relLangURL}}{{end}}">{{ .Name }}</a>
+              {{ end }}
+            </div>
+          </li>
+          {{ else }}
+          <li class="nav-item">
+            <a class="nav-link" {{if findRE `^http` .URL}}target="_blank" rel="noopener" {{end}}
+              href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{ .URL }}{{else}}{{.URL | relLangURL}}{{end}}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+          {{ end }}
+        </ul>
+
+        <!-- Language List -->
+        {{ if .IsTranslated }}
+        <select class="m-2 border-0" id="select-language" onchange="location = this.value;">
+          {{ $siteLanguages := site.Languages}}
+          {{ $pageLang := .Page.Lang}}
+          {{ range .Page.AllTranslations }}
+          {{ $translation := .}}
+          {{ range $siteLanguages }}
+          {{ if eq $translation.Lang .Lang }}
+          {{ $selected := false }}
+          {{ if eq $pageLang .Lang}}
+          <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}" selected>{{ .LanguageName }}
+          </option>
+          {{ else }}
+          <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}">{{ .LanguageName }}</option>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </select>
+        {{ end }}
+
+
+   
+      </div>
+    </nav>
+
+  </div>
+</div>
+</div>
+</header>
+<!-- /navigation -->

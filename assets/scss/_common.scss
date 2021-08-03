@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Oswald&display=swap');
+
+body {
+  color: $dark;
+  background-color: $white;
+  font-family: $primary_font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.8;
+
+  @include mobile {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+}
+
+::selection {
+  color: $white;
+  background-color: darken($primary-color, 5);
+  text-shadow: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 30px;
+}
+
+/*------------------------------------------------------------------
+ # default styles
+-------------------------------------------------------------------*/
+.section {
+  padding: 100px 0;
+}
+
+
+// social-links
+.social-links {
+  a {
+    padding: 7px 0;
+    color: rgba($black, .8);
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &.is-circle-outline {
+    a {
+      height: 56px;
+      width: 56px;
+      line-height: 55px;
+      display: inline-block;
+      color: $white;
+      border: 1px solid #ddd;
+      padding: 0;
+      border-radius: 50%;
+      margin: 0 5px;
+
+      &:hover {
+        background-color: rgba($white, .2);
+        border-color: $white;
+      }
+    }
+  }
+
+  &.is-circle-filled {
+    a {
+      height: 56px;
+      width: 56px;
+      line-height: 55px;
+      display: inline-block;
+      color: $dark;
+      text-align: center;
+      background-color: $gray;
+      padding: 0;
+      border-radius: 50%;
+
+      &:hover {
+        background-color: $dark;
+        color: $white;
+      }
+
+      &.facebook:hover {
+        background-color: #3B5999
+      }
+
+      &.twitter:hover {
+        background-color: #55ACEE
+      }
+
+      &.pinterest:hover {
+        background-color: #BD081C
+      }
+    }
+  }
+}
+
+ a[href^="https://twitter.com/intent/tweet/?"],
+ a[href^="https://facebook.com/sharer/sharer.php?"]{
+  display: block !important;
+}
+
+
+
+// preloader
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $white;
+  z-index: 999889898;
+}
+
+
+// card style
+.card.post-card {
+  border-radius: 0px;
+  border: 0;
+  margin-bottom: 100px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+  .card-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.post-title {
+  text-transform: uppercase;
+  color: $dark;
+  font-family: $secondary_font;
+  display: inline-block;
+  transition: .3s ease;
+}
+
+a.post-title:hover,
+.post-title:hover a {
+  opacity: .7;
+  color: inherit;
+}
+
+.card-meta-tag {
+  margin-bottom: 30px;
+
+  a {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: $secondary_font;
+    color: $dark;
+    font-size: 16px;
+    padding-bottom: 7px;
+    border-bottom: 4px solid rgba($primary-color, .7);
+  }
+
+  &.featured {
+    a {
+      background-color: $primary-color;
+      color: $white;
+      padding: 6px 18px;
+      border-bottom: 0;
+    }
+  }
+}
+
+.card-meta {
+  font-size: 18px;
+  color: #aaa;
+}
+
+
+// content
+.content {
+  p {
+    margin-bottom: 30px;
+  }
+
+  img {
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  h3,
+  h4 {
+    color: $dark;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  h3 {
+    margin-top: 40px;
+  }
+
+  ol,
+  ul {
+    margin-bottom: 25px;
+    padding-left: 5px;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  img {
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+
+  blockquote {
+    padding-left: 50px;
+    color: $dark;
+    font-size: 22px;
+    margin: 30px 0;
+    position: relative;
+    border-left: 3px solid #ddd;
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    cite {
+      opacity: .7;
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: 13px;
+      position: relative;
+      padding-left: 50px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 20px;
+        left: 0;
+        top: 50%;
+        background-color: $dark;
+        opacity: .5;
+      }
+    }
+  }
+}
+
+
+// form-control
+.form-control {
+  border: 1px solid #eee;
+  border-radius: 0 !important;
+  height: 45px;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 400;
+  transition: .3s ease;
+
+  &:focus {
+    box-shadow: none;
+    color: $dark;
+    border-color: #aaa;
+
+    ~.input-group-append {
+      .input-group-text {
+        border-color: #aaa;
+      }
+    }
+  }
+}
+
+.input-group-text {
+  background-color: transparent;
+  border-radius: 0 !important;
+  transition: .3s ease;
+}
+
+button.input-group-text {
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.custom-control-label {
+  user-select: none;
+  cursor: text;
+  font-size: 15px;
+
+  &::before {
+    cursor: pointer;
+    border-radius: 0;
+    box-shadow: none !important;
+  }
+}
+
+.custom-checkbox {
+  margin-top: 15px;
+
+  .custom-control-label::before {
+    border-radius: 0;
+  }
+
+  .custom-control-input:checked~.custom-control-label::before,
+  .custom-control-input:not(:disabled):active~.custom-control-label::before {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+
+  .custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color: transparent;
+  }
+
+  .custom-control-input:disabled:checked~.custom-control-label::before {
+    background-color: rgba($primary-color, .5);
+    border-color: rgba($primary-color, .2);
+  }
+}
+
+/*------------------------------------------------------------------
+ # helper classes
+-------------------------------------------------------------------*/
+.font-primary {
+  font-family: $primary_font
+}
+
+.font-secondary {
+  font-family: $secondary_font
+}
+
+.text-primary {
+  color: $primary-color !important
+}
+
+a.text-primary:hover {
+  color: darken($primary-color, 20) !important
+}
+
+.bg-primary {
+  background-color: $primary-color !important
+}
+
+.text-dark {
+  color: $dark
+}
+
+a.text-dark:hover {
+  color: $primary-color !important
+}
+
+.bg-dark {
+  background-color: $dark !important
+}

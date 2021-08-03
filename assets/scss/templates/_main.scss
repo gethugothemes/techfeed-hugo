@@ -1,0 +1,86 @@
+// banner
+.banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+  position: relative;
+  z-index: 1;
+  color: $gray;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba($black, .5);
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+}
+
+
+// author-block
+.author-block {
+  padding: 120px 0;
+  color: $dark;
+}
+
+
+// blog post
+.single-post-meta,
+.single-post-similer {
+  // margin-top: 70px;
+}
+.post-card{
+  i.fas.fa-arrow-right{
+    font-size: 12px;
+  }
+}
+
+.post-meta-tags {
+  a {
+    display: inline-block;
+    background-color: #f7f8fa;
+    color: $dark;
+    padding: 3px 13px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 50px;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+    }
+  }
+}
+
+.single-post-author {
+  margin-top: 100px;
+}
+
+.post-block .content {
+  img {
+    width: 100%;
+  }
+}
+
+// category
+.category-list {
+  display: flex;
+  justify-content: center;
+
+  li {
+    list-style: none;
+    border: 1px solid;
+    padding: 10px 50px;
+    margin-right: 20px;
+  }
+}
+
+
+// contact
+textarea {
+  height: 200px;
+}

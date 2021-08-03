@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+
+           <!-- image path -->
+          {{ $imagePath:= .Params.image }}
+          <!-- image processing for multiple device -->
+          {{ if fileExists (add `assets/` $imagePath) }}
+          {{ $image:= resources.Get $imagePath }}
+          <img loading="lazy" class="img-fluid rounded mb-5" decoding="async" src="{{$image.RelPermalink}}" width="{{ .Params.image_width}}" alt="post image">
+          {{ end }}
+          <!-- /image cdn -->
+
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Content }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+{{end}}

@@ -1,0 +1,40 @@
+// button style
+.btn {
+	font-size: 18px;
+	padding: 12px 32px;
+	color: $white;
+	border-radius: 50px;
+	transition: .2s ease-out;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	border: 0;
+	
+	&:active,
+	&:focus {
+		border: 0;
+		box-shadow: none !important;
+	}
+
+	&.btn-primary {
+		background-color: $primary-color !important;
+		&:hover,
+		&:active,
+		&:focus {
+			color: $white;
+			background-color: $dark !important;
+		}
+	}
+
+	&.btn-dark {
+		background-color: $dark !important;
+		color: $white;
+		&:hover,
+		&:active,
+		&:focus {
+			color: $white;
+			background-color: $primary-color !important;
+		}
+	}
+
+}

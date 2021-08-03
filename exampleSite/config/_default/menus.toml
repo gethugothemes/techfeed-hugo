@@ -1,0 +1,48 @@
+############# English navigation ##############
+
+# main menu
+
+[[main]]
+URL = "/"
+name = "home"
+weight = 1
+
+
+[[main]]
+URL = "about"
+name = "about"
+weight = 2
+
+[[main]]
+URL = "categories"
+name = "category"
+weight = 3
+
+
+[[main]]
+URL = "contact"
+name = "contact"
+weight = 5
+
+[[main]]
+URL = "blog"
+name = "blog"
+weight = 4
+
+
+# dropdown menu
+[[main]]
+name = "Pages"
+weight = 6
+hasChildren = true
+
+  # dropdown item
+  [[main]]
+  parent = "Pages"
+  name = "page 1"
+  URL = "/"
+
+  [[main]]
+  parent = "Pages"
+  name = "page 2"
+  URL = "/"

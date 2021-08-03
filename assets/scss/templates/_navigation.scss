@@ -1,0 +1,132 @@
+// start header style
+header {
+   background-color: $white;
+   padding: 25px 0;
+   padding-bottom: 20px;
+   border-bottom: 1px solid $gray;
+
+   .nav-item {
+      margin-right: 25px;
+      position: relative;
+
+      &::after {
+         position: absolute;
+         content: "";
+         height: 5px;
+         width: 8px;
+         background-color: #ddd;
+         top: calc(50% - 2px);
+         right: -15px;
+         pointer-events: none;
+         border-radius: 8px;
+      }
+
+      &:last-child {
+         margin-right: 0;
+         &::after {
+            display: none;
+         }
+      }
+
+      &.active .nav-link {
+         color: $primary-color !important;
+      }
+
+      &.dropdown .nav-link::after {
+         display: none;
+      }
+
+      .nav-link {
+         text-transform: uppercase;
+         letter-spacing: 2px;
+         color: $black !important;
+         padding: 15px !important;
+         font-size: 15px;
+
+         &:hover {
+            color: $primary-color !important;
+         }
+      }
+   }
+
+   @media (min-width:991px) {
+      .dropdown-menu {
+         display: block;
+         opacity: 0;
+         visibility: hidden;
+         width: 200px;
+         left: 50%;
+         transform: translateX(-50%);
+         margin-top: 30px;
+         border-radius: 0;
+         border: 1px solid #f6f6f6;
+         background-color: $gray;
+         transition: .3s ease;
+      }
+
+      .dropdown:hover .dropdown-menu {
+         opacity: 1;
+         visibility: visible;
+         margin-top: -3px;
+      }
+   }
+
+   .dropdown-menu {
+      padding: 5px;
+   }
+
+   .dropdown-item {
+      padding: 9px 20px;
+   }
+
+   .dropdown-item.active,
+   .dropdown-item:active,
+   .dropdown-item:focus,
+   .dropdown-item:hover {
+      color: $black;
+      background-color: darken($gray, 5);
+   }
+
+   .navbar-light .navbar-toggler {
+      border-color: transparent;
+      padding: 0;
+      font-size: 28px;
+      margin: auto;
+      color: $dark;
+      transition: .3s ease;
+      &:hover {
+         color: $primary-color;
+      }
+   }
+
+   @include desktop {
+      .navbar-nav {
+         max-width: 300px;
+         text-align: center;
+         padding-top: 20px;
+         margin-right: auto !important;
+      }
+
+      .dropdown-menu {
+         padding: 5px 0;
+         text-align: center;
+         border: 0;
+         background: rgba($primary-color, .03);
+      }
+
+      .nav-item {
+         margin-right: 0;
+         
+         .nav-link {
+            padding: 7px 20px !important;
+            font-size: 15px;
+         }
+
+         &::after {
+            display: none;
+         }
+      }
+   }
+}
+
+// end header style

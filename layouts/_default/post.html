@@ -1,0 +1,23 @@
+<article class="card post-card text-center">
+  <a href="{{.RelPermalink}}">
+    {{ with .Params.image }}
+    {{ if fileExists (add `assets/` .) }}
+    {{$image:= resources.Get . }}
+    {{ $imageFallback:= $image.Resize "1110x" }}
+    {{ $imageXL:= $image.Resize "1110x webp" }}
+    {{ $imageLG:= $image.Resize "650x webp" }}
+    {{ $imageMD:= $image.Resize "600x webp" }}
+    {{ $imageSM:= $image.Resize "545x webp" }}
+    <img loading="lazy" decoding="async" class="img-fluid w-100" src="{{$imageFallback.RelPermalink}}" alt="post image"
+      width="{{$image.Width}}" height="{{$image.Height}}">
+    {{end}}
+    {{end}}
+  </a>
+
+  <div class="card-body">
+    <h5 class="mt-3">
+      <a class="post-title" href="{{.RelPermalink}}">{{.Title}}</a>
+    </h5>
+    <p>{{.Summary}}</p>
+  </div>
+</article>
