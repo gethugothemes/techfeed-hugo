@@ -21,9 +21,9 @@ contact_form_action = "#" # contact form works with https://formspree.io
 search = false
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
 custom_script= "" 
+copyright = "Copyright  &copy; 2021, All rights reserved. <br> Design & Develop by [GetHugoThemes](https://themefisher.com)"
 
 mainSections = ["blog"]
-copyright = "Copyright &copy; 2021, All rights reserved. <br> Design & Develop by [GetHugoThemes](https://themefisher.com)"
 
 
 [banner]
