@@ -1,10 +1,10 @@
-# Techfeed | [Demo](https://github.com/gethugothemes/techfeed-hugo/)
+# Techfeed | [Demo](https://techfeed.netlify.app/)
 
-Techfeed is clean and modern Hugo blog theme focused on high speed and support single author. Techfeed fits perfectly any kind of blog specially personal, photography, travel or biography blogs. Techfeed is fully responsive, Super fast and powered by Bootstrap.
+Techfeed is clean and modern Hugo blog theme focused on high speed and support single author. Techfeed is a personal blog theme. Techfeed is fully responsive, Super fast and powered by Bootstrap.
 
-The [demo site](https://demo.gethugothemes.com/bookworm/) here. Make sure you visit it, to get the awesome hands-on experience.
+The [demo site](https://techfeed.netlify.app) here. Make sure you visit it, to get the awesome hands-on experience.
 
-ExampleSite can be found here: [exampleSite](https://github.com/gethugothemes/bookworm/tree/master/exampleSite). Demo is built up with exampleSite as source.
+ExampleSite can be found here: [exampleSite](https://github.com/gethugothemes/techfeed-hugo/tree/main/exampleSite). Demo is built up with exampleSite as source.
 
 ---
 
@@ -17,7 +17,6 @@ ExampleSite can be found here: [exampleSite](https://github.com/gethugothemes/bo
 -   Real content updated
 -   [x] Netlify deploy properly
 -   Forestry settings included
--   All buttons are linked
 -   Minimal and Modern Design.
 -   Single Author support.
 -   Author profile 
@@ -26,7 +25,7 @@ ExampleSite can be found here: [exampleSite](https://github.com/gethugothemes/bo
 -   Social-Media share buttons on single post.
 -   Taxonomies
 -   Contact form support with [Formspree](https://formspree.io)
--   No webpack, nodejs and other depedencies required to edit the theme.
+
 
 **
 
@@ -34,13 +33,13 @@ ExampleSite can be found here: [exampleSite](https://github.com/gethugothemes/bo
 
 ## Installation 📥
 
-Read Wiki For More Details => **[Bookworm - Installation](https://github.com/gethugothemes/techfeed-hugo/wiki/installation)**
+Read Wiki For More Details => **[Techfeed - Installation](https://github.com/gethugothemes/techfeed-hugo/wiki/installation)**
 
 ---
 
 ## Configuration ⚙
 
-Read Wiki For More Details => **[Bookworm - Configuration](https://github.com/gethugothemes/techfeed-hugo/wiki/configuration)**
+Read Wiki For More Details => **[Techfeed - Configuration](https://github.com/gethugothemes/techfeed-hugo/wiki/configuration)**
 
 ---
 
@@ -52,7 +51,7 @@ Maintain(Add, Create or Remove) Pages: **[Maintain Pages](https://github.com/get
 
 ## Release Changelog 📝
 
-Release ChangeLog has info about stuff added: **[Releases](https://github.com/gethugothemes/bookworm/releases)** -->
+Release ChangeLog has info about stuff added: **[Releases](https://github.com/gethugothemes/Techfeed/releases)** -->
 
 ---
 
