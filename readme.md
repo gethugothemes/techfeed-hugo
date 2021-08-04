@@ -10,25 +10,13 @@ ExampleSite can be found here: [exampleSite](https://github.com/gethugothemes/te
 
 ## Features 🔥🔥
 
--   All images are optimised
--   All functions are working properly
--   All devices responsive ready
--   No spelling mistake
--   Real content updated
--   [x] Netlify deploy properly
--   Forestry settings included
--   Minimal and Modern Design.
--   Single Author support.
--   Author profile 
 -   Custom pagination.
--   Recent posts suggestion on single post.
+-   similar posts suggestion on single post.
 -   Social-Media share buttons on single post.
 -   Taxonomies
 -   Contact form support with [Formspree](https://formspree.io)
-
-
-**
-
+-   Fully Responsive
+-   Coded with Bootstrap 4 Framework
 ---
 
 ## Installation 📥
