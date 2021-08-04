@@ -7,19 +7,19 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-6">
-        
-         <!-- image path -->
-         {{ $imagePath:= site.Params.logo}}
-         <!-- image processing for multiple device -->
-         {{ if fileExists (add `assets/` $imagePath) }}
-         {{ $image:= resources.Get $imagePath }}
- 
-         <a href="{{ site.BaseURL }}">
+
+        <!-- image path -->
+        {{ $imagePath:= site.Params.logo}}
+        <!-- image processing for multiple device -->
+        {{ if fileExists (add `assets/` $imagePath) }}
+        {{ $image:= resources.Get $imagePath }}
+
+        <a href="{{ site.BaseURL }}">
           <img width="{{ site.Params.logo_width}}" class="img-fluid mb-4" src="{{ $image.RelPermalink }}"
             alt="{{site.Title}}">
         </a>
-         {{ end }}
-         <!-- /image cdn -->
+        {{ end }}
+        <!-- /image cdn -->
 
         <em class="d-block">{{ .content | markdownify }}</em>
         <ul class="social-links is-circle-outline list-unstyled list-inline mt-5">
@@ -35,26 +35,21 @@
 </section>
 {{ end }}
 
-{{partial "header" .}}
+{{ partial "header" . }}
 
 {{ with site.Params.author_block }}
 <section class="author-block text-center">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        
         <!-- image path -->
         {{ $imagePath:= .image }}
-      
         <!-- image processing for multiple device -->
         {{ if fileExists (add `assets/` $imagePath) }}
         {{ $image:= resources.Get $imagePath }}
-
         <img loading="lazy" class="img-fluid rounded-circle mb-5" decoding="async" class="img-fluid w-100"
           src="{{$image.RelPermalink}}" alt="post image" width="{{$image.Width}}" height="{{$image.Height}}">
         {{ end }}
-        <!-- /image cdn -->
-
         {{with .title}}<h3 class="text-uppercase font-secondary mb-4">{{.|markdownify}}</h3>{{end}}
         {{with .content}}<em class="d-block">{{.|markdownify}}</em>{{end}}
       </div>
@@ -74,13 +69,13 @@
         <article class="card post-card">
           <div class="row no-gutters justify-content-center">
             <div class="col-lg-12">
-              
+
               <!-- image path -->
               {{ $imagePath:= .Params.image }}
               <!-- image CDN -->
               {{ if hasPrefix $imagePath "http" }}
               <img loading="lazy" decoding="async" src="{{ $imagePath | safeURL }}" alt="{{ .Title }}"
-                class="img-fluid">
+                class="img-fluid w-100">
               {{ else }}
               <!-- /image cdn -->
 
@@ -106,7 +101,6 @@
               <!-- /image processing for multiple device -->
               {{ end }}
               <!-- /single image -->
-
             </div>
             <div class="col-lg-9">
               <div class="card-body mt-5">
@@ -122,22 +116,14 @@
 
                   <div class="card-meta">
                     <em>{{.PublishDate.Format "Jan 2, 2006"}}</em>
-                    <em>by <a href="{{`/about`}}" class="card-meta-author text-primary">{{.Params.author}}</a></em>
-                  </div>
-
-                  <div class="card-meta">
-                    {{ with site.GetPage (.Params.Author | urlize | lower) }}
-                    <a href="{{.Permalink}}" class="card-meta-author">
-                      <span>{{ .Title }}</span>
-                    </a>
-                    {{ end }}
+                    <em>by <a href="{{`/about`}}" class="card-meta-author text-primary">{{site.Params.author}}</a></em>
                   </div>
 
                 </div>
                 <div class="content">{{.Summary}}</div>
                 <div class="text-center">
-                  <a class="text-primary d-inline-block mt-4" href="{{.RelPermalink}}">{{ "Continue Reading" }}
-                    <i class="fas fa-arrow-right"></i>
+                  <a class="text-primary d-inline-block mt-4" href="{{.RelPermalink}}">Continue Reading <i
+                      class="fas fa-arrow-right"></i>
                   </a>
 
                   {{ $url := printf "%s" .Permalink | absLangURL }}
@@ -175,7 +161,6 @@
         <div class="col-lg-9">
           <div class="row text">
             {{ $paginator := .Paginator }}
-
             <!-- Number of links either side of the current page. -->
             {{ $adjacent_links := 2 }}
 
@@ -191,13 +176,6 @@
             <!-- If there's more than one page. -->
             {{ if gt $paginator.TotalPages 1 }}
 
-
-            <!-- First page. -->
-            {{ if ne $paginator.PageNumber 1 }}
-
-
-            {{ end }}
-
             <!-- Previous page. -->
             {{ if .Paginator.HasPrev }}
             <div class="col-sm-6 text-center text-sm-left">
@@ -211,13 +189,9 @@
 
             <!-- Page numbers. -->
             {{ range $paginator.Pagers }}
-
             {{ $.Scratch.Set "page_number_flag" false }}
-
-
             <!-- Advanced page numbers. -->
             {{ if gt $paginator.TotalPages $max_links }}
-
 
             <!-- Lower limit pages. -->
             <!-- If the user is on a page which is in the lower limit.  -->
@@ -228,7 +202,6 @@
             {{ $.Scratch.Set "page_number_flag" true }}
             {{ end }}
 
-
             <!-- Upper limit pages. -->
             <!-- If the user is on a page which is in the upper limit. -->
             {{ else if ge $paginator.PageNumber $upper_limit }}
@@ -238,7 +211,6 @@
             {{ $.Scratch.Set "page_number_flag" true }}
             {{ end }}
 
-
             <!-- Middle pages. -->
             {{ else }}
 
@@ -247,7 +219,6 @@
             {{ end }}
 
             {{ end }}
-
 
             <!-- Simple page numbers. -->
             {{ else }}
@@ -263,15 +234,12 @@
               <a class="btn btn-dark" href="{{ .Paginator.Next.URL }}"><i class=""></i> Next </a>
             </div>
             {{ end }}
-
-            <!-- .pagination -->
             {{ end }}
-
+            <!-- .pagination -->
           </div>
         </div>
       </div>
     </div>
-
   </div>
 </section>
 

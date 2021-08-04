@@ -5,37 +5,30 @@
       <div class="col-md-10 mx-auto">
         <div class="text-center">
           <h1 class="mb-4">{{ .Title }}</h1>
-
-          {{ with site.Params.contact_form }}
-          <form action="https://formspree.io/f/{{ .form_action}}" method="post">
+          <form action="{{site.Params.contact_form_action}}" method="post">
             <div class="row g-4">
               <div class="col-md-6 mb-3">
-                <input type="text" class="form-control" placeholder="{{ .first_name }}" aria-label="First name" name="first-name">
+                <input type="text" class="form-control" placeholder="First Name" aria-label="First name" name="first-name">
               </div>
               <div class="col-md-6 mb-3">
-                <input type="text" class="form-control" placeholder="{{ .last_name }}" aria-label="Last name" name="last-name">
+                <input type="text" class="form-control" placeholder="Last Name" aria-label="Last name" name="last-name">
               </div>
 
               <div class="col-md-6 mb-3">
-                <input type="text" class="form-control" placeholder="{{ .email }}" aria-label="Email" name="email">
+                <input type="text" class="form-control" placeholder="Email" aria-label="Email" name="email">
               </div>
               <div class="col-md-6 mb-3">
-                <input type="text" class="form-control" placeholder="{{ .subject }}" aria-label="Subject" name="subject">
+                <input type="text" class="form-control" placeholder="Subject" aria-label="Subject" name="subject">
               </div>
 
               <div class="col-12 mb-3">
-                <textarea style="height: 200px;" class="form-control" placeholder="{{ .message }}"
-                  id="floatingTextarea" name="message"></textarea>
+                <textarea style="height: 200px;" class="form-control" placeholder="Type your message..." id="floatingTextarea" name="message"></textarea>
               </div>
               <div class="col-12 mb-3">
-                <button type="submit" class="btn btn-primary">{{ .submit }}</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
               </div>
             </div>
-
           </form>
-
-          {{end}}
-
         </div>
       </div>
     </div>

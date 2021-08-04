@@ -20,7 +20,7 @@ border_color = "#ACB9C4"
 # font variable
 # Give your font name from google font. add font weight using ":wght@" and separate by ";"
 # example: "Lora:wght@400;500;600"
-primary_font = "Lora:ital@0"
+primary_font = "Lora:ital@0;1"
 primary_font_type = "serif" # [serif/serif]
 secondary_font = "Oswald"
 secondary_font_type = "sans-serif" # [serif/sans-serif]
@@ -30,7 +30,6 @@ icon_font = "Font Awesome 5 Free"
 ############################# Plugins ##############################
 
 # CSS Plugins
-
 [[params.plugins.css]]
 link = "plugins/font-awesome/fontawesome.min.css"
 [[params.plugins.css]]

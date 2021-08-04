@@ -2,9 +2,8 @@
 title: "FINDING LOVE AND ROMANCE ON THE ROAD"
 date: 2021-07-14T15:06:48+06:00
 image: "images/03.jpg"
-author: "Emma"
 featured: false
-categories: ["ARTS & CULTURE"]
+categories: ["Development"]
 draft: false
 ---
 

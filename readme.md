@@ -1,8 +1,8 @@
-# Techfeed | [Demo](https://techfeed.netlify.app/)
+# Techfeed | [Demo](https://demo.gethugothemes.com/techfeed/)
 
 Techfeed is clean and modern Hugo blog theme focused on high speed and support single author. Techfeed is a personal blog theme. Techfeed is fully responsive, Super fast and powered by Bootstrap.
 
-The [demo site](https://techfeed.netlify.app) here. Make sure you visit it, to get the awesome hands-on experience.
+The [demo site](https://demo.gethugothemes.com/techfeed/) here. Make sure you visit it, to get the awesome hands-on experience.
 
 ExampleSite can be found here: [exampleSite](https://github.com/gethugothemes/techfeed-hugo/tree/main/exampleSite). Demo is built up with exampleSite as source.
 
@@ -16,7 +16,6 @@ ExampleSite can be found here: [exampleSite](https://github.com/gethugothemes/te
 -   Taxonomies
 -   Contact form support with [Formspree](https://formspree.io)
 -   Fully Responsive
--   Coded with Bootstrap 4 Framework
 ---
 
 ## Installation 📥

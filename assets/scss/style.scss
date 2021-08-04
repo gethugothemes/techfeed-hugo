@@ -9,8 +9,8 @@ $body-color: {{.body_color | default "#fff"}};
 $border-color: {{.border_color | default "#ECECEC"}};
 
 // Font Variables
-$primary-font: '{{ replaceRE ":[ital,]*wght@[0-9,;]+" "" .primary_font | default "Lato"}}', {{.primary_font_type | default "serif"}};
-$secondary-font: '{{ replaceRE ":[ital,]*wght@[0-9,;]+" "" .secondary_font | default "Lato"}}', {{.secondary_font_type | default "sans-serif"}};
+$primary-font: '{{ replaceRE ":[ital,]*[ital@]*[wght@]*[0-9,;]+" "" .primary_font | default "Lato"}}', {{.primary_font_type | default "sans-serif"}};
+$secondary-font: '{{ replaceRE ":[ital,]*[ital@]*[wght@]*[0-9,;]+" "" .secondary_font | default "Lato"}}', {{.secondary_font_type | default "sans-serif"}};
 $icon-font: '{{.icon_font | default "Font Awesome 5 Free"}}';
 {{ end }}
 

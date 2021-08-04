@@ -1,9 +1,8 @@
 ---
 title: "I am Emma, A content writer based in LDN, currently at Bookworm."
+image: "images/about.jpg"
 description: "this is meta description"
 layout: "about"
-image: "images/about.jpg"
-image_width: "100%"
 draft: false
 ---
 

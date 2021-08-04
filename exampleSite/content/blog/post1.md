@@ -2,7 +2,6 @@
 title: "MEMORIES FROM LAST SUMMER"
 date: 2021-07-15T11:06:48+06:00
 image: "images/01.jpg"
-author: "Emma"
 featured: true
 categories: ["Development"]
 draft: false
@@ -28,9 +27,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
 
-![img](../../assets/images/03.jpg)
-
-
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
 
 - Nam ut rutrum ex venenatis sollicitudin;
@@ -38,5 +34,3 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur
 - Excepturi repellendus consequatur quibusda;
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
-
-

@@ -4,13 +4,12 @@
       <div class="col-lg-12">
         <ul class="social-links is-circle-filled list-unstyled list-inline mb-4">
           {{range site.Params.social -}}
-          <li class="list-inline-item"><a href="#!">
+          <li class="list-inline-item"><a href="{{.link | safeURL}}">
               <i class="{{ .icon }}"></i>
             </a></li>
           {{- end}}
         </ul>
-        <P class="mb-0"> {{ site.Params.copyright | markdownify }} </P>
-
+        <P class="mb-0">{{ site.Params.copyright | markdownify }}</P>
       </div>
     </div>
   </div>

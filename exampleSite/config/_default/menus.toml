@@ -7,7 +7,6 @@ URL = "/"
 name = "home"
 weight = 1
 
-
 [[main]]
 URL = "about"
 name = "about"
@@ -18,7 +17,6 @@ URL = "categories"
 name = "category"
 weight = 3
 
-
 [[main]]
 URL = "contact"
 name = "contact"
@@ -28,7 +26,6 @@ weight = 5
 URL = "blog"
 name = "blog"
 weight = 4
-
 
 # dropdown menu
 [[main]]

@@ -1,0 +1,13 @@
+name = "TechFeed"
+license = "MIT"
+licenselink = "https://github.com/gethugothemes/techfeed-hugo/blob/master/LICENSE"
+description = "TechFeed is personal Hugo blog theme focused on high speed and clean interface. TechFeed is simple, minimal & white. TechFeed is fully responsive, Super fast and powered by Bootstrap."
+homepage = "https://github.com/gethugothemes/techfeed-hugo/"
+demosite = "https://demo.gethugothemes.com/techfeed/"
+tags = ['blog', 'light', 'bootstrap', 'responsive', 'contact-form']
+features = ['responsive']
+min_version = "0.83.1"
+
+[author]
+name = "gethugothemes"
+homepage = "https://gethugothemes.com/"

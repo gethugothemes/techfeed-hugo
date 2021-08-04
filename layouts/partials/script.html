@@ -16,7 +16,7 @@
 {{ if .enable }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
 <div id="js-cookie-box" class="cookie-box cookie-box-hide">
-	{{.content | markdownify}}<span id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2">{{.button}}</span>
+	{{.content | markdownify}}<span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">{{.button}}</span>
 </div>
 <script type="application/javascript">
 	(function ($) {
@@ -64,7 +64,7 @@
   WebFont.load({
     google: {
       api: 'https://fonts.googleapis.com/css2',
-      families: ['{{$pf | default `Lato:ital@0`}}{{if not $sf}}&display=swap{{end}}'{{with $sf}},'{{. | default `Lato`}}&display=swap'{{end}}],
+      families: ['{{$pf | default `Lora:ital@0;1`}}{{if not $sf}}&display=swap{{end}}'{{with $sf}},'{{. | default `Oswald`}}&display=swap'{{end}}],
       version: 2
     },
     active: () => {

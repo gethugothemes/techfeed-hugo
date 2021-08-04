@@ -2,10 +2,8 @@
 title: "MEMORIES FROM LAST SUMMER"
 date: 2021-07-14T15:06:41+06:00
 image: "images/02.jpg"
-author: "Emma"
-card_meta_tag: "ARTS & CULTURE"
 featured: false
-categories: ["lifestyle"]
+categories: ["Arts & Culture"]
 draft: false
 ---
 

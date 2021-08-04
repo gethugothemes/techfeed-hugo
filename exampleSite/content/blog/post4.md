@@ -2,9 +2,8 @@
 title: "What else do we need to make this a success?"
 date: 2021-07-15T15:40:55+06:00
 image: "images/01.jpg"
-author: "Emma"
 featured: false
-categories: ["ARTS & CULTURE"]
+categories: ["Development"]
 draft: false
 ---
 

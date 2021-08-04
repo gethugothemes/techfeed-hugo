@@ -2,8 +2,8 @@
 <div class="preloader">
 
   <!-- get image path -->
-  {{ with site.Params.preloader.preloader }}
-  {{ $preloaderPath:= . }}
+  {{ $preloaderPath:= site.Params.preloader.preloader }}
+  {{ if $preloaderPath }}
 
   <!-- check image existence -->
   {{ if fileExists (add `assets/` $preloaderPath) }}
