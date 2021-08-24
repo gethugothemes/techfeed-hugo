@@ -3,28 +3,28 @@
 # main menu
 
 [[main]]
-URL = "/"
 name = "home"
+url = "/"
 weight = 1
 
 [[main]]
-URL = "about"
 name = "about"
+url = "about/"
 weight = 2
 
 [[main]]
-URL = "categories"
 name = "category"
+url = "categories/"
 weight = 3
 
 [[main]]
-URL = "contact"
 name = "contact"
+url = "contact/"
 weight = 5
 
 [[main]]
-URL = "blog"
 name = "blog"
+url = "blog/"
 weight = 4
 
 # dropdown menu
@@ -37,9 +37,9 @@ hasChildren = true
   [[main]]
   parent = "Pages"
   name = "page 1"
-  URL = "/"
+  url = "/"
 
   [[main]]
   parent = "Pages"
   name = "page 2"
-  URL = "/"
+  url = "/"
