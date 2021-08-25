@@ -4,7 +4,7 @@ favicon = "images/favicon.png"
 # logo
 logo = "images/logo.png"
 # use `x` with logo_width, example: "100x"
-logo_width = "150x"
+logo_width = "150px"
 # logo text will only show when logo is missing.
 logo_text = "TechFeed"
 # OpenGraph / Twitter Card metadata

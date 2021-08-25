@@ -42,3 +42,7 @@ Release ChangeLog has info about stuff added: **[Releases](https://github.com/ge
 
 ---
 
+
+## Check Our Mega Bundle 📦
+| [![mega-bundle-hugo](https://gethugothemes.com/wp-content/themes/gethugothemes/assets/images/bundle.png)](https://gethugothemes.com/bundle/) |
+| -- |
