@@ -23,14 +23,14 @@
                 <div class="dropdown-menu">
                   {{ range .Children }}
                   <a class="dropdown-item" {{if findRE `^http` .URL}}target="_blank" rel="noopener" {{end}}
-                    href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{.URL}}{{else if eq .URL (`/` | relURL) }}{{.URL}}{{site.Language}}/{{else}}{{.URL | relLangURL}}{{end}}">{{ .Name }}</a>
+                    href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{.URL}}{{.URL | relLangURL}}{{end}}">{{ .Name }}</a>
                   {{ end }}
                 </div>
               </li>
               {{ else }}
               <li class="nav-item">
                 <a class="nav-link" {{if findRE `^http` .URL}}target="_blank" rel="noopener" {{end}}
-                  href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{.URL}}{{else if eq .URL (`/` | relURL) }}{{.URL}}{{site.Language}}/{{else}}{{.URL | relLangURL}}{{end}}">{{ .Name }}</a>
+                  href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{.URL}}{{.URL | relLangURL}}{{end}}">{{ .Name }}</a>
               </li>
               {{ end }}
               {{ end }}
