@@ -43,6 +43,6 @@ Release ChangeLog has info about stuff added: **[Releases](https://github.com/ge
 ---
 
 
-## Check Our Mega Bundle 📦
+## Get 40+ Premium Hugo Templates bundle From Our Store 📦
 | [![mega-bundle-hugo](https://gethugothemes.com/wp-content/themes/gethugothemes/assets/images/bundle.png)](https://gethugothemes.com/bundle/) |
 | -- |
