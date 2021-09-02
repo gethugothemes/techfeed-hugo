@@ -20,11 +20,6 @@ copyright = "Designed & Developed by [GetHugoThemes](https://gethugothemes.com)"
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
 custom_script= "" 
 
-# banner
-[banner]
-content = "Beautiful, Elegant and Vintage-inspired premium blog and portfolio theme."
-bg_image= "images/banner.png"
-
 # author
 [author_block]
 title= "WELCOME TO MY BLOG"
