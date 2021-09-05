@@ -1,48 +1,131 @@
-# Techfeed | [Demo](https://demo.gethugothemes.com/techfeed/)
+<h1 align=center>Techfeed Hugo Theme | <a target="_blank" href="https://demo.gethugothemes.com/techfeed" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Ftechfeed%2F">Page Speed (91%)</a></h1>
 
-Techfeed is clean and modern Hugo blog theme focused on high speed and support single author. Techfeed is a personal blog theme. Techfeed is fully responsive, Super fast and powered by Bootstrap.
+<p align=center>
+  <a href="https://github.com/gohugoio/hugo/releases/tag/v0.83.1" alt="Contributors">
+    <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.83.1&color=f00&logo=hugo" />
+  </a>
 
-The [demo site](https://demo.gethugothemes.com/techfeed/) here. Make sure you visit it, to get the awesome hands-on experience.
+  <a href="https://github.com/gethugothemes/techfeed-hugo/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/gethugothemes/techfeed-hugo" alt="license"></a>
 
-ExampleSite can be found here: [exampleSite](https://github.com/gethugothemes/techfeed-hugo/tree/main/exampleSite). Demo is built up with exampleSite as source.
+  <img src="https://img.shields.io/github/languages/code-size/gethugothemes/techfeed-hugo" alt="code size">
 
----
+  <a href="https://github.com/gethugothemes/techfeed-hugo/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/gethugothemes/techfeed-hugo" alt="contributors"></a>
 
-## Features 🔥🔥
-
--   Custom pagination.
--   similar posts suggestion on single post.
--   Social-Media share buttons on single post.
--   Taxonomies
--   Contact form support with [Formspree](https://formspree.io)
--   Fully Responsive
----
-
-## Installation 📥
-
-Read Wiki For More Details => **[Techfeed - Installation](https://github.com/gethugothemes/techfeed-hugo/wiki/installation)**
+  <a href="https://twitter.com/intent/follow?screen_name=gethugothemes">
+    <img src="https://img.shields.io/twitter/follow/gethugothemes?style=social&logo=twitter"
+      alt="follow on Twitter"></a>
+</p>
 
 ---
 
-## Configuration ⚙
-
-Read Wiki For More Details => **[Techfeed - Configuration](https://github.com/gethugothemes/techfeed-hugo/wiki/configuration)**
-
----
-
-## Maintain Pages 📜
-
-Maintain(Add, Create or Remove) Pages: **[Maintain Pages](https://github.com/gethugothemes/techfeed-hugo/wiki/Maintain-Pages)**
-
-<!-- ---
-
-## Release Changelog 📝
-
-Release ChangeLog has info about stuff added: **[Releases](https://github.com/gethugothemes/Techfeed/releases)** -->
+<p align="center">
+  <img src="https://demo.gethugothemes.com/thumbnails/techfeed.webp" alt="screenshot" width="100%">
+</p>
 
 ---
+## Features
+- Open graph meta tag
+- Twitter card meta tag
+- Google analytics  support
+- Image optimised  with hugo pipe
+- CSS and Js bundle with hugo pipe
+- Netlify settings predefine
+- Google font loads from webfont loader
+- Single author available
+- Color and fonts variable in config file
+- Contact form Support with formsoree 
+- Similar posts suggestion on single post
+- GDPR consent enabled
+- Taxonomies
+- Google page speed optimized ( 91% )
 
 
-## Get 40+ Premium Hugo Templates bundle From Our Store 📦
-| [![mega-bundle-hugo](https://gethugothemes.com/wp-content/themes/gethugothemes/assets/images/bundle.png)](https://gethugothemes.com/bundle/) |
-| -- |
+## Local development
+
+```bash
+# clone the repository
+git clone git@github.com:gethugothemes/techfeed-hugo.git
+
+# cd in the project directory
+$ cd techfeed-hugo/exampleSite/
+
+# Start local dev server
+$ hugo server --themesDir ../..
+```
+Or Check out [Full Documentation](https://docs.gethugothemes.com/techfeed).
+
+## Content Management System
+
+[![import to
+Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=gethugothemes/techfeed-hugo&engine=hugo&version=0.87.0)
+
+This project has been pre-configured to work with [Forestry](https://forestry.io) a git-based CMS, [import your
+repository in Forestry](https://app.forestry.io/quick-start?repo=gethugothemes/techfeed-hugo&engine=hugo&version=0.87.0) and
+you will be able to edit and preview your site ✨.
+
+Any changes you make in Forestry will be committed back to the repo and deployed if you use [Netlify](#netlify).
+## Deployment and hosting
+
+[![Deploy to
+Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gethugothemes/techfeed-hugo)
+
+Follow the steps.
+
+## Prefer a video? (Hugo + Netlify + Forestry)
+Build your website with **Techfeed Hugo** theme by following these easy steps (No Coding Required!)
+[Video Tutorial](https://youtu.be/ResipmZmpDU).
+
+<!-- reporting issue -->
+## Reporting Issues
+We use GitHub Issues as the official bug tracker for the Techfeed Template. Please Search [existing
+issues](https://github.com/gethugothemes/techfeed-hugo/issues). Someone may have already reported the same problem.
+If your problem or idea has not been addressed yet, feel free to [open a new
+issue](https://github.com/gethugothemes/techfeed-hugo/issues).
+
+<!-- ## Techfeed Hugo theme Powered Websites
+- https://thetechbattalion.com/
+- https://adaptechgroup.com/
+- https://adenuz.com/
+- https://junior-aei.com/
+- https://akademiainformatyki.edu.pl/
+- https://naval-engineering.com/
+- https://www.istrosec.com/
+- https://www.puylevequepatrimoine.com/
+- https://www.beltlabs.com/
+- https://cloud-fundis.co.za
+- https://www.cocoon-arolla.com
+- https://www.plurisante202.fr
+
+View all the websites powered by Techfeed Hugo theme [here](https://github.com/gethugothemes/techfeed-hugo/wiki/All-Techfeed-Hugo-theme-Powered-Websites). Want to submit your own website powered by Techfeed Hugo theme? You can submit it [here](https://github.com/gethugothemes/techfeed-hugo/discussions). -->
+
+<!-- licence -->
+## License
+Copyright &copy; Designed by [Themefisher](https://themefisher.com) & Developed by
+[Gethugothemes](https://gethugothemes.com)
+
+**Code License:** Released under the [MIT](https://github.com/gethugothemes/techfeed-hugo/blob/master/LICENSE) license.
+
+**Image license:** The images are only for demonstration purposes. They have their licenses. We don't have permission to
+share those images.
+
+<!-- resources -->
+## Special Thanks
+- [Bootstrap](https://getbootstrap.com)
+- [Jquery](https://jquery.com)
+- [Web Font Loader](https://github.com/typekit/webfontloader)
+- [Font Awesome Icons](https://fontawesome.com)
+- [Google Fonts](http://fonts.google.com/)
+- [All Contributors](https://github.com/gethugothemes/techfeed-hugo/graphs/contributors)
+
+
+## Hire Us
+We are available for **Hiring** for your next HUGO project. Please, check our
+[services](https://cutt.ly/ght-service)
+
+<!-- premium themes -->
+## Premium Themes By Us
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle) | [![Bookworm](https://demo.gethugothemes.com/thumbnails/bookworm.webp)](https://gethugothemes.com/products/bookworm/) | [![Touchy](https://demo.gethugothemes.com/thumbnails/touchy.webp)](https://gethugothemes.com/products/touchy-hugo/) |
+|:---:|:---:|:---:|
+| **Premium Theme Bundle (40+)** | **Bookworm** | **Touchy** |
