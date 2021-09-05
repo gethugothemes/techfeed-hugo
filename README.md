@@ -21,7 +21,8 @@
 ---
 
 <p align="center">
-  <img src="https://demo.gethugothemes.com/thumbnails/techfeed.webp" alt="screenshot" width="100%">
+
+ ![apollo](images/screenshot.png)
 </p>
 
 ---
