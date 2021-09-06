@@ -1,4 +1,4 @@
-<h1 align=center>Techfeed Hugo Theme | <a target="_blank" href="https://demo.gethugothemes.com/techfeed" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Ftechfeed%2F">Page Speed (91%)</a></h1>
+<h1 align=center>Techfeed Hugo | <a target="_blank" href="https://demo.gethugothemes.com/techfeed" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Ftechfeed%2F">Page Speed (91%)</a></h1>
 
 <p align=center>
   <a href="https://github.com/gohugoio/hugo/releases/tag/v0.83.1" alt="Contributors">
@@ -27,20 +27,19 @@
 
 ---
 ## Features
-- Open graph meta tag
-- Twitter card meta tag
 - Google analytics  support
-- Image optimised  with hugo pipe
-- CSS and Js bundle with hugo pipe
+- Image optimize  with hugo pipe
+- CSS and JS bundle with hugo pipe
 - Netlify settings predefine
 - Google font loads from webfont loader
 - Single author available
 - Color and fonts variable in config file
-- Contact form Support with formsoree 
+- Contact form Support 
 - Similar posts suggestion on single post
-- GDPR consent enabled
-- Taxonomies
+- GDPR consent enable
 - Google page speed optimized ( 91% )
+- Open graph meta tag
+- Twitter card meta tag
 
 
 ## Local development
@@ -86,20 +85,8 @@ If your problem or idea has not been addressed yet, feel free to [open a new
 issue](https://github.com/gethugothemes/techfeed-hugo/issues).
 
 <!-- ## Techfeed Hugo theme Powered Websites
-- https://thetechbattalion.com/
-- https://adaptechgroup.com/
-- https://adenuz.com/
-- https://junior-aei.com/
-- https://akademiainformatyki.edu.pl/
-- https://naval-engineering.com/
-- https://www.istrosec.com/
-- https://www.puylevequepatrimoine.com/
-- https://www.beltlabs.com/
-- https://cloud-fundis.co.za
-- https://www.cocoon-arolla.com
-- https://www.plurisante202.fr
 
-View all the websites powered by Techfeed Hugo theme [here](https://github.com/gethugothemes/techfeed-hugo/wiki/All-Techfeed-Hugo-theme-Powered-Websites). Want to submit your own website powered by Techfeed Hugo theme? You can submit it [here](https://github.com/gethugothemes/techfeed-hugo/discussions). -->
+View all the websites powered by Techfeed Hugo theme [here](https://github.com/gethugothemes/techfeed-hugo/wiki/All-Techfeed-Hugo-Powered-Websites). Want to submit your own website powered by Techfeed Hugo theme? You can submit it [here](https://github.com/gethugothemes/techfeed-hugo/discussions/4). -->
 
 <!-- licence -->
 ## License
@@ -127,6 +114,6 @@ We are available for **Hiring** for your next HUGO project. Please, check our
 
 <!-- premium themes -->
 ## Premium Themes By Us
-| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle) | [![Bookworm](https://demo.gethugothemes.com/thumbnails/bookworm.webp)](https://gethugothemes.com/products/bookworm/) | [![Touchy](https://demo.gethugothemes.com/thumbnails/touchy.webp)](https://gethugothemes.com/products/touchy-hugo/) |
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle) | [![Bookworm](https://demo.gethugothemes.com/thumbnails/bookworm.webp)](https://gethugothemes.com/products/bookworm/) | [![Touchy](https://demo.gethugothemes.com/thumbnails/touchy.webp)](https://gethugothemes.com/products/touchy) |
 |:---:|:---:|:---:|
 | **Premium Theme Bundle (40+)** | **Bookworm** | **Touchy** |
