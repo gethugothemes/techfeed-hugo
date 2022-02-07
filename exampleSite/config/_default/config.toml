@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://demo.gethugothemes.com/techfeed/"
+baseURL = "https://demo.gethugothemes.com/techfeed/examplesite/"
 title = "Techfeed"
 theme = "techfeed-hugo"
 # post pagination
@@ -30,7 +30,7 @@ maxAge = "720h"
 
 [markup]
 [markup.goldmark.renderer]
-unsafe= true
+unsafe = true
 
 [mediaTypes]
 [mediaTypes."application/manifest+json"]

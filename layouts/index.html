@@ -72,7 +72,7 @@
                 <div class="text-center mb-5">
                   <div class="card-meta-tag {{if .Params.featured}}featured{{end}}">
                     {{ range .Params.categories }}
-                    <a href="{{`categories` | relURL}}/{{. | urlize | lower}}">{{ . }}</a>
+                    <a href="{{`categories` | relURL}}{{. | urlize | lower}}/">{{ . }}</a>
                     {{ end }}
                   </div>
                   <h2 class="h1 mb-3">
@@ -81,7 +81,7 @@
 
                   <div class="card-meta">
                     <em>{{.PublishDate.Format "Jan 2, 2006"}}</em>
-                    <em>by <a href="{{`/about`}}" class="card-meta-author text-primary">{{site.Params.author}}</a></em>
+                    <em>by <a href="{{`about/`}}" class="card-meta-author text-primary">{{site.Params.author}}</a></em>
                   </div>
 
                 </div>

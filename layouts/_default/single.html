@@ -37,14 +37,14 @@
         <div class="text-center mb-5">
           <div class="card-meta-tag {{if .Params.featured}}featured{{end}}">
             {{ range .Params.categories }}
-            <a href="{{`categories` | relURL}}/{{. | urlize | lower}}">{{ . }}</a>
+            <a href="{{`categories` | relURL}}{{. | urlize | lower}}/">{{ . }}</a>
             {{ end }}
           </div>
           <h1 class="mb-3">{{.Title}}</h1>
           <div class="card-meta">
             <em>{{.PublishDate.Format "Jan 2, 2006"}}</em>
             <em>
-              <a href="{{`about` | relLangURL }}" class="card-meta-author text-primary">
+              <a href="{{`about/` | relLangURL }}" class="card-meta-author text-primary">
                 {{ site.Params.author }}
               </a>
           </div>
