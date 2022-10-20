@@ -1,4 +1,7 @@
-<h1 align=center>Techfeed Hugo | <a target="_blank" href="https://demo.gethugothemes.com/techfeed" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Ftechfeed%2F">Page Speed (91%)</a></h1>
+<h1 align=center>Techfeed Hugo </h1>
+<p align=center>Techfeed is a beautiful and lightweight blog theme. </p>
+<h2 align="center"> <a target="_blank" href="https://demo.gethugothemes.com/techfeed" rel="nofollow">Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Ftechfeed%2Fsite%2F&form_factor=desktop">Page Speed (97%)</a></h2>
+
 
 <p align=center>
   <a href="https://github.com/gohugoio/hugo/releases/tag/v0.83.1" alt="Contributors">
@@ -26,7 +29,7 @@
 
 ---
 
-## Features
+## Key Features
 
 - Google analytics  support
 - Image optimize  with hugo pipe
@@ -38,7 +41,7 @@
 - Contact form Support
 - Similar posts suggestion on single post
 - GDPR consent enable
-- Google page speed optimized ( 91% )
+- Google page speed optimized
 - Open graph meta tag
 - Twitter card meta tag
 
@@ -121,6 +124,6 @@ We are available for **Hiring** for your next HUGO project. Please, check our
 <!-- premium themes -->
 ## Premium Themes By Us
 
-| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png)](https://gethugothemes.com/bundle) | [![Bookworm](https://demo.gethugothemes.com/thumbnails/bookworm.png)](https://gethugothemes.com/products/bookworm/) | [![Logbook](https://demo.gethugothemes.com/thumbnails/logbook.png)](https://gethugothemes.com/products/logbook) |
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png?)](https://gethugothemes.com/bundle) | [![Bookworm](https://demo.gethugothemes.com/thumbnails/bookworm.png)](https://gethugothemes.com/products/bookworm/) | [![Logbook](https://demo.gethugothemes.com/thumbnails/logbook.png)](https://gethugothemes.com/products/logbook) |
 |:---:|:---:|:---:|
-| **Premium Theme Bundle (40+)** | **Bookworm** | **Logbook** |
+| **Premium Theme Bundle (55+)** | **Bookworm** | **Logbook** |
