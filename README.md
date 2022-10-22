@@ -91,9 +91,16 @@ issues](https://github.com/gethugothemes/techfeed-hugo/issues). Someone may have
 If your problem or idea has not been addressed yet, feel free to [open a new
 issue](https://github.com/gethugothemes/techfeed-hugo/issues).
 
-<!-- ## Techfeed Hugo theme Powered Websites
+## Submit Your Website To Our Showcase
 
-View all the websites powered by Techfeed Hugo theme [here](https://github.com/gethugothemes/techfeed-hugo/wiki/All-Techfeed-Hugo-Powered-Websites). Want to submit your own website powered by Techfeed Hugo theme? You can submit it [here](https://github.com/gethugothemes/techfeed-hugo/discussions/4). -->
+Are you using Techfeed Hugo theme? Submit it to our [showcase](https://gethugothemes.com/showcase). 
+
+Our showcase aims to demonstrate to the world what amazing websites people like you have created utilizing our Hugo themes and to show that Hugo has tremendous capabilities as a Static Site Generator. 
+
+View all the websites powered by Techfeed Hugo from [here](https://gethugothemes.com/showcase?theme=techfeed). 
+
+[Submit](https://gethugothemes.com/showcase?submit=show) your Techfeed Hugo powered website.
+
 
 <!-- licence -->
 ## License
