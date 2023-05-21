@@ -1,6 +1,6 @@
 <h1 align=center>Techfeed Hugo </h1>
 <p align=center>Techfeed is a beautiful and lightweight blog theme. </p>
-<h2 align="center"> <a target="_blank" href="https://demo.gethugothemes.com/techfeed" rel="nofollow">Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Ftechfeed%2Fsite%2F&form_factor=desktop">Page Speed (97%)</a></h2>
+<h2 align="center"> <a target="_blank" href="https://demo.gethugothemes.com/techfeed" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Ftechfeed%2Fsite%2F&form_factor=desktop">Page Speed (97%)🚀</a></h2>
 
 
 <p align=center>
@@ -29,23 +29,24 @@
 
 ---
 
-## Key Features
+## 🔑Key Features
 
-- Google analytics  support
-- Image optimize  with hugo pipe
-- CSS and JS bundle with hugo pipe
-- Netlify settings predefine
-- Google font loads from webfont loader
-- Single author available
-- Color and fonts variable in config file
-- Contact form Support
-- Similar posts suggestion on single post
-- GDPR consent enable
-- Google page speed optimized
-- Open graph meta tag
-- Twitter card meta tag
+- 📊 Google Analytics support
+- 🌄 Image optimization with Hugo Pipe
+- 🎨 CSS and JS bundle with Hugo Pipe
+- 🅱️ Bootstrap Based
+- ⚙️ Netlify settings predefined
+- 🔤 Google font loads from webfont loader
+- 👤 Single author available
+- 🎨 Color and fonts variable in config file
+- ✉️ Contact form support
+- 🔄 Similar posts suggestion on single post
+- 🚀 Google Page Speed optimized
+- 🌐 Open Graph meta tag
+- 🐦 Twitter Card meta tag
 
-## Local development
+
+## 🔧Local development
 
 ```bash
 # clone the repository
@@ -60,7 +61,7 @@ $ hugo server --themesDir ../..
 
 Or Check out [Full Documentation](https://docs.gethugothemes.com/techfeed).
 
-## Content Management System
+## 📋Content Management System
 
 [![import to
 Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=gethugothemes/techfeed-hugo&engine=hugo&version=0.87.0)
@@ -71,27 +72,27 @@ you will be able to edit and preview your site ✨.
 
 Any changes you make in Forestry will be committed back to the repo and deployed if you use [Netlify](#netlify).
 
-## Deployment and hosting
+## ⚙️Deployment and hosting
 
 [![Deploy to
 Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gethugothemes/techfeed-hugo)
 
 Follow the steps.
 
-## Prefer a video? (Hugo + Netlify + Forestry)
+## 🎥Prefer a video? (Hugo + Netlify + Forestry)
 
 Build your website with **Techfeed Hugo** theme by following these easy steps (No Coding Required!)
 [Video Tutorial](https://youtu.be/ResipmZmpDU).
 
 <!-- reporting issue -->
-## Reporting Issues
+## 🐞Reporting Issues
 
 We use GitHub Issues as the official bug tracker for the Techfeed Template. Please Search [existing
 issues](https://github.com/gethugothemes/techfeed-hugo/issues). Someone may have already reported the same problem.
 If your problem or idea has not been addressed yet, feel free to [open a new
 issue](https://github.com/gethugothemes/techfeed-hugo/issues).
 
-## Submit Your Website To Our Showcase
+## 📱Submit Your Website To Our Showcase
 
 Are you using Techfeed Hugo theme? Submit it to our [showcase](https://gethugothemes.com/showcase). 
 
@@ -103,7 +104,7 @@ View all the websites powered by Techfeed Hugo from [here](https://gethugothemes
 
 
 <!-- licence -->
-## License
+## 📄License
 
 Copyright &copy; Designed by [Themefisher](https://themefisher.com) & Developed by
 [Gethugothemes](https://gethugothemes.com)
@@ -114,7 +115,7 @@ Copyright &copy; Designed by [Themefisher](https://themefisher.com) & Developed 
 share those images.
 
 <!-- resources -->
-## Special Thanks
+## 🙏Special Thanks
 
 - [Bootstrap](https://getbootstrap.com)
 - [Jquery](https://jquery.com)
@@ -123,13 +124,13 @@ share those images.
 - [Google Fonts](http://fonts.google.com/)
 - [All Contributors](https://github.com/gethugothemes/techfeed-hugo/graphs/contributors)
 
-## Hire Us
+## 👨‍💻Hire Us
 
 We are available for **Hiring** for your next HUGO project. Please, check our
 [services](https://gethugothemes.com/services/?ref=github)
 
 <!-- premium themes -->
-## Premium Themes By Us
+## 💎Premium Themes By Us
 
 | [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png?)](https://gethugothemes.com/bundle) | [![Bookworm](https://demo.gethugothemes.com/thumbnails/bookworm.png)](https://gethugothemes.com/products/bookworm/) | [![Logbook](https://demo.gethugothemes.com/thumbnails/logbook.png)](https://gethugothemes.com/products/logbook) |
 |:---:|:---:|:---:|
