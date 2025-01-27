@@ -3,7 +3,7 @@ baseURL = "https://demo.gethugothemes.com/techfeed/examplesite/"
 title = "Techfeed"
 theme = "techfeed-hugo"
 # post pagination
-paginate = "2"
+pagination.pagerSize = "2"
 # post excerpt
 summaryLength = "30"
 # google analytics
