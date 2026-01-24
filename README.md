@@ -1,6 +1,6 @@
 <h1 align=center>Techfeed Hugo </h1>
 <p align=center>Techfeed is a beautiful and lightweight blog theme. </p>
-<h2 align="center"> <a target="_blank" href="https://demo.gethugothemes.com/techfeed" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Ftechfeed%2Fsite%2F&form_factor=desktop">Page Speed (97%)🚀</a></h2>
+<h2 align="center"> <a target="_blank" href="https://techfeed-hugo.vercel.app/" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-techfeed-hugo-vercel-app/3ci58w54an?form_factor=desktop">Page Speed (97%)🚀</a></h2>
 
 
 <p align=center>
