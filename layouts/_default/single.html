@@ -72,6 +72,12 @@
             </li>
           </ul>
         </div>
+        <!-- comments -->
+        {{ if site.Params.open_remark.enable }}
+        <div class="mt-5">
+          {{ partial "open-remark.html" . }}
+        </div>
+        {{ end }}
       </div>
 
       <div class="col-12 mt-5">

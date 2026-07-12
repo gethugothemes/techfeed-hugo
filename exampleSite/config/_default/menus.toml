@@ -31,7 +31,6 @@ weight = 4
 [[main]]
 name = "Pages"
 weight = 6
-hasChildren = true
 
   # dropdown item
   [[main]]

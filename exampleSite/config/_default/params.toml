@@ -38,6 +38,12 @@ expire_days = 2
 content = "This site uses cookies. By continuing to use this website, you agree to their use."
 button = "I Accept"
 
+########################### OpenRemark Comments ############################
+[open_remark]
+enable = true
+site_key = "cmqnb3wd5000104kww7862ku4" # your site key from the OpenRemark dashboard
+embed_url = "https://open-remark.zeon.studio/embed.js" # OpenRemark embed.js URL | Make sure it didn't change
+
 ############################# social site ########################
 [[social]]
 icon = "fab fa-facebook-f"

@@ -6,7 +6,7 @@ homepage = "https://github.com/gethugothemes/techfeed-hugo/"
 demosite = "https://demo.gethugothemes.com/techfeed/"
 tags = ['blog', 'light', 'bootstrap', 'responsive', 'contact-form']
 features = ['responsive']
-min_version = "0.83.1"
+min_version = "0.163.3"
 
 [author]
 name = "gethugothemes"
